@@ -1,12 +1,19 @@
 {
-  "collapse-filter": true,
-  "search": "",
+  "collapse-filter": false,
+  "search": "path:\"10-真题/资料分析/增长\" OR path:\"20-考点/资料分析/增长\"",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
+    {
+      "query": "path:\"10-真题/资料分析\"",
+      "color": {
+        "a": 1,
+        "rgb": 5017087
+      }
+    },
     {
       "query": "path:\"10-真题/判断推理\"",
       "color": {
@@ -39,6 +46,6 @@
   "repelStrength": 12,
   "linkStrength": 1,
   "linkDistance": 200,
-  "scale": 0.030182895067324095,
-  "close": true
+  "scale": 1,
+  "close": false
 }
