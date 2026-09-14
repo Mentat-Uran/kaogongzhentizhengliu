@@ -1,0 +1,13 @@
+# Obsidian 本地工作区状态（每台机器不同，不应进仓库）
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# 空画布占位文件
+未命名.canvas
+
+# 系统 / 编辑器垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
+.trash/
+*.tmp
