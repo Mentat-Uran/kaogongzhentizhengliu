@@ -2,9 +2,9 @@
 
 - 复核记录：1,597 条唯一题号。
 - 固定题目内容 commit：`84ab93d4b64b61d897bece8a1c0a5bab06b4feb2`。
-- 可计分：1,596 条（1,589 道单一答案，7 道多答案按完整集合评分）。
+- 可计分：1,596 条（1,584 道单一答案，12 道多答案按完整集合评分）。
 - 保留人工复核、不计分：1 条。
-- 另有 6 条采用明确标注的编辑版计分；原题状态保存在 `originalPrompt`。
+- 另有 146 条采用明确标注的编辑版计分；原题状态保存在 `originalPrompt`，其中原题可独立计分的答案也单独标明。
 - 结构化逐题记录：[`复核记录.jsonl`](复核记录.jsonl)。
 
 JSONL 一行对应一道题。`answer` 是当前计分版本的 `A`–`D` 单一选项；多答案题以 `acceptedAnswers` 保存完整答案集合。若 `activeVersion` 为 `editorial`，答案只对 `correctedStem`/`correctedOptions` 明确标注的编辑版有效；`originalPrompt` 单独保存原题状态、答案与计分资格，原题仍不确定时必须留空且不计分。`correctedExplanation` 给出独立推理或仍无法确定的具体原因，`relatedInfo` 补充考点与口径，`evidence` 保留固定题源路径、源 blob SHA、引用原图、复核依据及可用的外部数据来源。若为消除歧义而编辑了题目笔记正文，`reviewedNoteBlobSha`/`reviewedNoteSize`记录固定上游正文以外的当前正文摘要；原 `sourceBlobSha`/`sourceSize`仍保留固定上游来源。若修订了共享材料页，`reviewedMaterialPath`、`reviewedMaterialBlobSha`/`reviewedMaterialSize`记录当前材料正文摘要，`materialSourceBlobSha`/`materialSourceSize`保留原材料的固定上游摘要。
